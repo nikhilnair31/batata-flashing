@@ -1,6 +1,16 @@
+const images = [
+    'images/pngegg (0).png',
+    'images/pngegg (1).png',
+    'images/pngegg (2).png',
+    'images/pngegg (3).png'
+];
+
 function flashRing() {
+    // Pick a random image from the array
+    let randomImage = images[Math.floor(Math.random() * images.length)];
+
     let ringImage = document.createElement('img');
-    ringImage.src = chrome.runtime.getURL('images/ring.png'); // Update with actual image path
+    ringImage.src = chrome.runtime.getURL("./"+randomImage); // Update with actual image path
     ringImage.style.position = 'fixed';
     ringImage.style.width = '50px';
     ringImage.style.height = '50px';
