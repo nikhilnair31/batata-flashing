@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Ext",
+    "version": "0.1",
+    "description": "Flashes a small ring image on the screen at random intervals, increasing in frequency as the end time approaches.",
+    "permissions": ["storage", "activeTab", "scripting"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+}  
