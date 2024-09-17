@@ -3,11 +3,21 @@
     "name": "Ext",
     "version": "0.1",
     "description": "Experiments",
-    "host_permissions": ["<all_urls>"],
+    "host_permissions": [
+        "<all_urls>", 
+        "chrome-extension://*/*"
+    ],
     "permissions": [
         "storage", 
         "activeTab", 
-        "scripting"
+        "scripting",
+        "tabs"
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [ "images/pngegg0.png", "images/pngegg1.png", "images/pngegg2.png", "images/pngegg3.png" ],
+            "matches": [ "<all_urls>" ]
+        }
     ],
     "background": {
       "service_worker": "background.js"

@@ -23,9 +23,14 @@
     </label>
 
     <label>
-        Interval: <span id="intervalValue">1000</span> ms
+        Flash Duration: <span id="durationValue">100</span> ms
     </label>
-    <input type="range" id="intervalSlider" min="500" max="5000" step="100" value="1000">
+    <input type="range" id="durationSlider" min="100" max="2000" step="100" value="100">
+    
+    <label>
+        Gap Between Flashes: <span id="gapValue">1000</span> ms
+    </label>
+    <input type="range" id="gapSlider" min="500" max="5000" step="100" value="1000">    
 
     <script src="popup.js"></script>
 </body>
