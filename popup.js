@@ -39,4 +39,3 @@ document.addEventListener('DOMContentLoaded', () => {
         chrome.runtime.sendMessage({ flashGap: gap });
     });
 });
-D:\Users\nikna\Documents\Obsidian Vault\
